@@ -3,29 +3,27 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-  
+
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav">
         <li routerLinkActive="active" class="nav-item"><a routerLink="/recipes" class="nav-link" *ngIf='isAuthenticated'>Recipes</a></li>
-        <li routerLinkAcive="active" class="nav-item"><a routerLink="/auth" class="nav-link" *ngIf='!isAuthenticated'>Authenticate</a></li>
-        <li routerLinkActive="active" class="nav-item">
+        <li routerLinkAcive="active" class="nav-item"><a routerLink="/auth" class="nav-link" *ngIf='!isAuthenticated'>Authentication</a></li>
+        <li routerLinkActive="active" class="nav-item" *ngIf='isAuthenticated'>
             <a routerLink="/shoppingList" class="nav-link">Shopping List</a>
         </li>
       </ul>
       <ul class='navbar-nav ml-auto'>
         <li routerLinkActive="active" class="nav-item" *ngIf='isAuthenticated'>
-          <a class="nav-link" (click)='onLogout()'>Logout</a>      
+          <a class="nav-link" (click)='onLogout()'>Logout</a>
         </li>
         <li class="nav-item dropdown" appDropdown #r="appDropdown">
-          <a class="nav-link dropdown-toggle" style="cursor: pointer;" id="navbarDropdown" 
+          <a class="nav-link dropdown-toggle" style="cursor: pointer;" id="navbarDropdown"
           role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" *ngIf='isAuthenticated'>
             Manage
           </a>
           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown" [ngClass]="{'show':r.isOpen}">
             <a class="dropdown-item" style="cursor: pointer;" (click)='onSaveData()'>Save Data</a>
             <a class="dropdown-item" style="cursor: pointer;" (click)='onFetchData()'>Fetch Data</a>
-            <div class="dropdown-divider"></div>
-            <a class="dropdown-item" style="cursor: pointer;">Something else here</a>
           </div>
         </li>
       </ul>

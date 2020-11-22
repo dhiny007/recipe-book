@@ -1,27 +1,25 @@
-# FoodKart
+# Recipe Book
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
+Read the instructions below to understand how it works..
 
-## Development server
+##**Instructions**
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Open the command prompt by running the command **cmd**, and then navigate to the folder named **Foodkart** through command prompt. Once done, run the command **ng serve**.
+* Now go to the browser and access the URL **http://localhost:4200/** to view the Foodkart application.
+* Create a new account by **signing up** on the Authentication page and once this is done, you will be able to login into the application.
 
-## Code scaffolding
+##**Technologies**
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* This application is build completely using **Angular** and a virtual backend called **Firebase** which has been used here to store the data of all users who have signed up and logged in, and also all the recipes and ingredients added and modified by various users.
 
-## Build
+##**Features**
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* There are four tabs in the navigation bar, namely **Recipes,Shopping List,Logout and a dropdown named Manage**.
+* The **Recipes** tab contains the list of recipes which have been added by various users and also gives you an option to add new Recipes to the application and also edit existing recipes. **Note: This application is common to all users and is not user specific, meaning any logged in user can add,edit and delete data from the application.**
+* Once the recipes are added by clicking on the Save button, you will have to **save the data by clicking on the Manage dropdown on the navigation bar and clicking on Save Data so that the recipe added by you is saved permanently**. If this is not done, **any new Recipe added by you or any changes to recipes made by you will be lost** once you navigate away from the Recipes tab.
+* The **Shopping List** tab contains the list of ingredients which have been added by various users.Also ingredients of any recipe can be pushed to the Ingredients List by **selecting the particular recipe and navigating to Manage Recipe -> To Shopping List**.
+* Clicking on **Logout** will log you out of your current login session instantly.
+* Each **login session** will be **valid only upto 1 hour**. After 1 hour of a single user login session, he/she will be **automatically logged out**.
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+**HAVE FUN EXPLORING!!**
