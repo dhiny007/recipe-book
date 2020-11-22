@@ -2,17 +2,17 @@
 
 Read the instructions below to understand how it works..
 
-##**Instructions**
+## **Instructions**
 
 * Open the command prompt by running the command **cmd**, and then navigate to the folder named **Foodkart** through command prompt. Once done, run the command **ng serve**.
 * Now go to the browser and access the URL **http://localhost:4200/** to view the Foodkart application.
 * Create a new account by **signing up** on the Authentication page and once this is done, you will be able to login into the application.
 
-##**Technologies**
+## **Technologies**
 
 * This application is build completely using **Angular** and a virtual backend called **Firebase** which has been used here to store the data of all users who have signed up and logged in, and also all the recipes and ingredients added and modified by various users.
 
-##**Features**
+## **Features**
 
 * There are four tabs in the navigation bar, namely **Recipes,Shopping List,Logout and a dropdown named Manage**.
 * The **Recipes** tab contains the list of recipes which have been added by various users and also gives you an option to add new Recipes to the application and also edit existing recipes. **Note: This application is common to all users and is not user specific, meaning any logged in user can add,edit and delete data from the application.**
