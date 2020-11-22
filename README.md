@@ -4,7 +4,7 @@ Read the instructions below to understand how it works..
 
 ## **Instructions**
 
-* Open the command prompt by running the command **cmd**, and then navigate to the folder named **Foodkart** through command prompt. Once done, run the command **ng serve**.
+* Open the command prompt by running the command **cmd**, and then navigate to the folder named **Foodkart** through command prompt. Run **npm install** to install all the needed packages. After the command runs, you will see that a folder called node_modules was created in the path.Once done, run the command **ng serve**.
 * Now go to the browser and access the URL **http://localhost:4200/** to view the Foodkart application.
 * Create a new account by **signing up** on the Authentication page and once this is done, you will be able to login into the application.
 
